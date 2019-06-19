@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_jerry.ico"/>
+	<link rel="shortcut icon" href="/img/logo_jerry.ico">
+	
+			    <title>
+    Jerry's Blog
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="Jerry" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">JERRY</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/cocos/">cocos</a></li><li><a class="category-link" href="/categories/iOS/">iOS</a></li><li><a class="category-link" href="/categories/生活/">生活</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/JerryWolsen" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(http://JerryWolsen.github.io/img/cocos_bg.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >creator中两个节点重叠时的触摸事件</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>在开发金币场斗地主项目时遇到了这样一个Bug: 玩家的手牌较多时，左边的第一张牌会与玩家的头像有重叠，这是产品允许的。但是当玩家点选这张牌或者从这张牌开始向右滑动选牌的时候，选中的牌没有被推上去。</p>
+<p>这个Bug出现的概率并不是很大，原因很简单，我们斗地主的手牌是从大到小排列的，当手牌较多时，很少会有人直接出左侧较大的牌。发现这个Bug后，我很快想到了可能是牌的节点与头像节点重叠导致的，因为头像节点上同样添加了手势的监听。</p>
+<p>选牌的手势监听是加到整个场景上的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">this.node.on(cc.Node.EventType.TOUCH_START, this.touchStart, this);</span><br><span class="line">this.node.on(cc.Node.EventType.TOUCH_MOVE, this.touchMove, this);</span><br><span class="line">this.node.on(cc.Node.EventType.TOUCH_END, this.touchEnd, this);</span><br></pre></td></tr></table></figure>
+<p>是否点击到牌以及点击到哪一张牌是由点击区域的坐标与牌的坐标计算得来的。<br>当用户滑动选牌时，首先触发touchStart,接着是touchMove,当手指离开屏幕时，触发touchEnd事件，所有滑动过程中接触到的手牌都会被置为选中状态。</p>
+<p>对于头像节点来说，它是场景节点的一个子节点，为了响应用户点击，并弹出个人信息对话框，它也监听了touchEnd事件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">this.player[1].on(cc.Node.EventType.TOUCH_END, this._onPlayerClick, this);</span><br></pre></td></tr></table></figure>
+<p>当点击左边第一张牌时， 相当于同时点击在头像的子节点以及手牌上。那么将会触发this.node 和 this.player 的 touchStart;</p>
+<p>当滑动到第5张牌时松开手指，此时已经离开了头像的区域，所以不会触发头像节点的touchEnd,这是很正常的；</p>
+<p>但是，<strong>此时this.node 的touchEnd也没有被触发</strong>， 这就是牌没有变成选中状态的原因。</p>
+<h2 id="问题抽象"><a href="#问题抽象" class="headerlink" title="问题抽象"></a>问题抽象</h2><p>把上述问题抽象一下： <strong>父节点和子节点同时监听touchEnd事件，点击子节点，并在子节点外松开手指， 这时父节点和子节点的touchEnd 事件都不会被触发。</strong></p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>通过监听子节点和父节点的所有触摸事件发现： 当触摸从子节点开始，在子节点外（父节点上）结束时，子节点和父节点的touchEnd事件都不会触发，然而，<strong>子节点和父节点的touchCancel事件会被先后触发</strong>。显然，子节点的touchCancel事件是正确触发的，我们不需要去关心； 但是，父节点的touchCanel事件触发导致无法正确捕获到touchEnd事件。为了让父节点仍然能够正常执行touchEnd （正常将手牌置为选中状态），只需要再监听下touchCancel事件，并在回调中执行touchEnd的逻辑就好了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">this.node.on(cc.Node.EventType.TOUCH_CANCEL, this._onTouchCancel, this);</span><br><span class="line"></span><br><span class="line">_onTouchCancel: function () &#123;</span><br><span class="line">	this._onTouchEnd();</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 valine -->
+<div id="comment">
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#comment' ,
+        notify: true,
+        verify: false,
+        app_id: 'your appId',
+        app_key: 'your appkey',
+        placeholder: 'Please leave your footprints',
+        pageSize: '10',
+        avatar: '',
+        avatar_cdn: 'https://gravatar.loli.net/avatar/'
+    });
+</script>
+</div>
+<style>
+   #comment{
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2018总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

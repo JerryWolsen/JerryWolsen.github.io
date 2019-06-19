@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_jerry.ico"/>
+	<link rel="shortcut icon" href="/img/logo_jerry.ico">
+	
+			    <title>
+    Jerry's Blog
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="Jerry" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">JERRY</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/cocos/">cocos</a></li><li><a class="category-link" href="/categories/iOS/">iOS</a></li><li><a class="category-link" href="/categories/python/">python</a></li><li><a class="category-link" href="/categories/生活/">生活</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/JerryWolsen" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="https://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://JerryWolsen.github.io/img/python.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >利用py2app打包成mac os app 遇到的坑</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h3 id="最近开发一个表情包的项目，需要给产品开发一个把动图拆帧并压缩的工具。代码是用python写的。考虑到产品及运营同学使用方便，就想着把Python脚本封装成一个app-在网上搜索了半天，最后选择了用py2app-来实现。"><a href="#最近开发一个表情包的项目，需要给产品开发一个把动图拆帧并压缩的工具。代码是用python写的。考虑到产品及运营同学使用方便，就想着把Python脚本封装成一个app-在网上搜索了半天，最后选择了用py2app-来实现。" class="headerlink" title="最近开发一个表情包的项目，需要给产品开发一个把动图拆帧并压缩的工具。代码是用python写的。考虑到产品及运营同学使用方便，就想着把Python脚本封装成一个app, 在网上搜索了半天，最后选择了用py2app 来实现。"></a>最近开发一个表情包的项目，需要给产品开发一个把动图拆帧并压缩的工具。代码是用python写的。考虑到产品及运营同学使用方便，就想着把Python脚本封装成一个app, 在网上搜索了半天，最后选择了用<strong>py2app</strong> 来实现。</h3><h3 id="教程在网上有很多，就不摘抄了，在这里就简单记录下我记录下py2app-使用的一些坑吧。如果你也踩到了同样的坑，那么恭喜你，下面就是亲测有效的解决办法"><a href="#教程在网上有很多，就不摘抄了，在这里就简单记录下我记录下py2app-使用的一些坑吧。如果你也踩到了同样的坑，那么恭喜你，下面就是亲测有效的解决办法" class="headerlink" title="教程在网上有很多，就不摘抄了，在这里就简单记录下我记录下py2app 使用的一些坑吧。如果你也踩到了同样的坑，那么恭喜你，下面就是亲测有效的解决办法~"></a>教程在网上有很多，就不摘抄了，在这里就简单记录下我记录下py2app 使用的一些坑吧。如果你也踩到了同样的坑，那么恭喜你，下面就是亲测有效的解决办法~</h3><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ul>
+<li><ol>
+<li><code>$pip install py2app</code>  </li>
+</ol>
+</li>
+<li><ol start="2">
+<li><code>cd 项目路径</code></li>
+</ol>
+</li>
+<li><ol start="3">
+<li><code>$py2applet –make-setup helloworld.py</code></li>
+</ol>
+</li>
+</ul>
+<h3 id="坑1："><a href="#坑1：" class="headerlink" title="坑1："></a>坑1：</h3><ul>
+<li><p><code>py2applet: command not found</code></p>
+<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><ul>
+<li>通过命令查找 <code>py2applet</code> 所在的位置</li>
+<li><code>$ sudo find / -name “py2applet” -type f</code></li>
+<li>查找过程比较长，稍微等待一会儿</li>
+<li>查找完成，会出现几条path</li>
+<li>由于我使用的python2.7, 我选择了下边的地址</li>
+<li><code>/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/bin/py2applet</code> <ul>
+<li>用这个路径再次执行命令</li>
+<li><code>/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/bin/py2applet --make-setup helloworld.py</code></li>
+<li>发现显示： <code>Wrote setup.py</code>  就成功了</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h2><ul>
+<li><ol>
+<li><code>sudo rm -rf build dist</code></li>
+</ol>
+</li>
+<li><ol start="2">
+<li><code>python setup.py py2app</code></li>
+</ol>
+</li>
+</ul>
+<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><h3 id="坑2"><a href="#坑2" class="headerlink" title="坑2"></a>坑2</h3><ul>
+<li>双击dist文件夹里的app, 报错: 提示系统权限不足</li>
+<li>如何查看出错信息？Contents -&gt; MacOS -&gt; helloworld 可直接运行，弹出终端</li>
+<li>代码中需要读写文件，是在当前文件夹中读写</li>
+<li>打包成APP之后，读写的文件夹默认是 在 右键-&gt; 显示包内容 -&gt; Contents -&gt; Resources中</li>
+<li><p>所以需要系统权限</p>
+</li>
+<li><p>OSX EI Capitan中增加了一个SIP功能，不管你是不是sudo，都会阻止你在系统目录下进行操作……</p>
+</li>
+<li><p>如何关闭？</p>
+<h3 id="解决办法-1"><a href="#解决办法-1" class="headerlink" title="解决办法"></a>解决办法</h3><ul>
+<li>重启电脑，command + R 进入安全模式， 终端输入 csrutil disable</li>
+</ul>
+</li>
+</ul>
+<h3 id="坑3"><a href="#坑3" class="headerlink" title="坑3"></a>坑3</h3><ul>
+<li><p>解决了读写权限问题，发现找不到PIL库</p>
+<h3 id="解决办法-2"><a href="#解决办法-2" class="headerlink" title="解决办法"></a>解决办法</h3><ul>
+<li>打开setup.py</li>
+<li>OPTIONS中添加以下内容：</li>
+<li><code>OPTIONS = {&#39;argv_emulation&#39;: True, &#39;packages&#39;: [&#39;PIL&#39;]}</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="坑4"><a href="#坑4" class="headerlink" title="坑4"></a>坑4</h3><ul>
+<li><p>使用requests 库报错</p>
+<h3 id="解决办法-3"><a href="#解决办法-3" class="headerlink" title="解决办法"></a>解决办法</h3><ul>
+<li>使用 python自带的urllib库</li>
+</ul>
+</li>
+</ul>
+<h3 id="解决了以上问题，-打包出来的app基本上可以正常运行了"><a href="#解决了以上问题，-打包出来的app基本上可以正常运行了" class="headerlink" title="解决了以上问题， 打包出来的app基本上可以正常运行了!"></a>解决了以上问题， 打包出来的app基本上可以正常运行了!</h3>
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 valine -->
+<div id="comment">
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#comment' ,
+        notify: true,
+        verify: false,
+        app_id: 'your appId',
+        app_key: 'your appkey',
+        placeholder: 'Please leave your footprints',
+        pageSize: '10',
+        avatar: '',
+        avatar_cdn: 'https://gravatar.loli.net/avatar/'
+    });
+</script>
+</div>
+<style>
+   #comment{
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2019总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
